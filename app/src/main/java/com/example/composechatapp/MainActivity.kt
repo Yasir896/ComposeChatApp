@@ -46,8 +46,8 @@ class MainActivity : ComponentActivity() {
 
     private fun initializePubNub() {
         pubNub = PubNub(PNConfiguration(userId = UserId(value = getRandomString(6))).apply {
-            publishKey = "pub-c-0bbabc39-0ac0-45b2-9255-ffeb2e0baf6f"
-            subscribeKey = "sub-c-66a947cb-606a-4849-9425-4fe249a6464c"
+            publishKey = "public_key_here"
+            subscribeKey = "subscribe_key_here"
             logVerbosity = PNLogVerbosity.BODY
         })
     }
